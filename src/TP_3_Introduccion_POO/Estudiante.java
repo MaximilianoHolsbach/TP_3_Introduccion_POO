@@ -11,6 +11,7 @@ package TP_3_Introduccion_POO;
  *  calificacion
  * Metodos: 
  *  getInfo()
+ *  setData(nombre, apellido, curso, calificacion)
  *  setSubirCalificacion(puntos)
  *  setBajarCalificacion(puntos)
  */
