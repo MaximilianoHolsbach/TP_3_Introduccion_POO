@@ -11,6 +11,7 @@ public class Principal_Estudiante {
         int puntos;
         String nombre;
         String apellido;
+        String str_curso, str_calificacion, str_puntos;
         int curso;
         int calificacion;
         System.out.println("Datos del estudiante: ");
@@ -19,18 +20,22 @@ public class Principal_Estudiante {
         nombre = input.nextLine();
         System.out.print("Ingrese el apellido del estudiante: ");
         apellido = input.nextLine();
-        System.out.print("Ingrese el curso del estudiante: ");
-        curso = Integer.parseInt(input.nextLine());
+        System.out.print("Ingrese el numero del curso del estudiante: ");
+        str_curso = input.nextLine();
+        curso = Integer.parseInt(str_curso);
         System.out.print("Ingrese el calificacion del estudiante: ");
-        calificacion = Integer.parseInt(input.nextLine());
+        str_calificacion = input.nextLine();
+        calificacion = Integer.parseInt(str_calificacion);
         estudiante1.setData(nombre, apellido, curso, calificacion);
         estudiante1.getInfo();
         System.out.println("Cuantos puntos subira al estudiante? ");
-        puntos = Integer.parseInt(input.nextLine());
+        str_puntos = input.nextLine();
+        puntos = Integer.parseInt(str_puntos);
         estudiante1.setSubirCalificacion(puntos);
         estudiante1.getInfo();
         System.out.println("Cuantos puntos bajara al estudiante? ");
-        puntos = Integer.parseInt(input.nextLine());
+        str_puntos = input.nextLine();
+        puntos = Integer.parseInt(str_puntos);
         estudiante1.setBajarCalificacion(puntos);
         estudiante1.getInfo();
     }
